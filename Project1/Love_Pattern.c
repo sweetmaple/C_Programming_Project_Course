@@ -1,4 +1,4 @@
-/*Love pattern*/
+/* Love_pattern */
 #include <stdio.h>
 int main() {
     printf("      **          **\n");
