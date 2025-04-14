@@ -1,5 +1,5 @@
+/*Love pattern*/
 #include <stdio.h>
-//Love pattern
 int main() {
     printf("      **          **\n");
     printf("   *******      *******\n");
