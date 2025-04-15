@@ -4,10 +4,10 @@
 #define PI 3.14
 int main() {
     float r;
-    double Area;
+    double area;
     printf("Please input the radius of the sphere:");
     scanf("%f", &r);
-    Area = 4 * PI * pow(r, 2); // Area = 4 * PI * r * r;
-    printf("Sphere's surface area is %f\n", Area);
+    area = 4 * PI * pow(r, 2); // Area = 4 * PI * r * r;
+    printf("Sphere's surface area is %f\n", area);
     return 0;
 }
