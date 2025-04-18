@@ -4,7 +4,7 @@
 int main() {
     int i, j, flag;
     for (i = 2; i <= 100; i++) {
-        flag = 1;
+        flag = 1; // 假设2 - 100所有都是素数
         for (j = 2; j <= sqrt(i); j++) {
             if (i % j == 0) {
                 flag = 0;
