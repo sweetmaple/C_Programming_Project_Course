@@ -1,9 +1,9 @@
 /* Rainfall */
-#include <stdio.h>
 /* 用符号常量,可以通过改变YEARS, MONTHS的值,查询想要的结果
  * 例如求2015-2017这三年中上半年的降雨量,月平均降雨量,月最大降雨量
  * 只需要将YEARS改为3,MONTHS改为6即可
  * */
+#include <stdio.h>
 #define YEARS 5
 #define MONTHS 12
 int main() {
