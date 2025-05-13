@@ -35,16 +35,16 @@ int main() {
         for (year = 0; year < YEARS; year++) {
             monthly_rainfall[month] += form[year][month];
         }
-        monthly_rainfall[month] /= 5;
+        monthly_rainfall[month] /= 5; // 注意这里位置不要写错了
     }
     /* 打印月的表头判断操作 */
-    for (month = 0; month < MONTHS; month++) {
-        if (month < 9) {
-            printf("0%d\t", 1 + month);
-        } else {
-            printf("%d\t", 1 + month);
-        }
-    }
+    for (month = 0; month < MONTHS; month++) { // 也可以 for (month = 1; month <= MONTHS; month++) {
+        if (month < 9) {                       //           if (month < 10) {
+            printf("0%d\t", 1 + month);        //               printf("0%d\t", month);
+        } else {                               //           } else {
+            printf("%d\t", 1 + month);         //               printf("%d\t", month);
+        }                                      //           }
+    }                                          //       }
     putchar('\n');
     for (month = 0; month < MONTHS; month++) {
         printf("%.2f\t", monthly_rainfall[month]);
