@@ -11,10 +11,11 @@ int main() {
     printf("Please input a string:");
     gets(str);
     for (i = 0, j = strlen(str); i < j; i += 3, j -= 3) { // UTF-8:一个汉字3byte(回文对联)
-        if (str[i] != str[j - 3]) {                       // 如果这里是英文数字符号3改为1即可
+        if (str[i] != str[j - 3]) {                         // 如果这里是英文数字符号3改为1即可
             break;
         }
     }
+    // for (i = 0, j = strlen(str) - 1; i < j && str[i] == str[j]; i++, j--); 等价写法
     if (i >= j) {
         printf("%s is palindrome.\n", str);
     } else {
