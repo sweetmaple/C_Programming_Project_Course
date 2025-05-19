@@ -8,7 +8,7 @@ int main() {
     int i;
     printf("Please input year-month-day:");
     scanf("%d-%d-%d", &year, &month, &day);
-    sum_days = day;
+    sum_days = day; // 直接把输入的天数给sum_days 后面的循环就不会少算输入的month月份的天数
     leap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     for (i = 1; i < month; i++) {
         sum_days += month_tab[leap][i - 1];
